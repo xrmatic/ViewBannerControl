@@ -1,0 +1,70 @@
+div[data-id="projectstatushistory_customcontrol-pcf-container-id"] {
+    margin-top: 7px;
+    /* background-color: cornsilk; */
+}
+
+.viewBannerStack::before {
+    content: '';
+    display: block;
+    background-image: url(/Webresources/cff_/Icons/circle-gray.svg), url('/WebResources/cff_/Icons/line.svg');
+    background-position: top 32px right, top 32px right;
+    background-size: 40px, 40px;
+    background-repeat: no-repeat, repeat-x;
+    width: 27.25px;
+}
+
+.viewBannerStack::after {
+    content: '';
+    display: block;
+    background-image: url(/Webresources/cff_/Icons/circle-gray.svg), url('/WebResources/cff_/Icons/line.svg');
+    background-position: top 32px left, top 32px left;
+    background-size: 40px, 40px;
+    background-repeat: no-repeat, repeat-x;
+    width: 27.25px;
+}
+
+.viewBannerStack {
+    background-color: #ffffff;
+}
+/*
+.viewBannerStack > :last-child {
+    border: 2px solid #00ccff;
+}
+*/
+
+.viewBannerStack > :not(:last-child) {
+    color: #a5a9a0;
+    font-weight: 500;
+}
+
+.viewBannerStack > :first-child {
+    margin-left: 0px;
+    padding: 0 15px;
+}
+
+.viewBannerStack > :not(:first-child) {
+    margin-left: 0px;
+    padding: 0 15px;
+}
+
+.viewBannerStackItem {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    background-image: url('/WebResources/cff_/Icons/medicalgrants.svg'), url('/WebResources/cff_/Icons/circle.svg'), url('/WebResources/cff_/Icons/line.svg');
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    background-size: 23px, 40px, 40px;
+    background-position: top 40px center, top 32px center, top 32px center;
+    height: 75px;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+}
+/*
+.viewBannerStackItem:hover {
+    color: #008AD8;
+    font-weight: 800;
+}
+*/
+.viewBannerArrow {
+    background-color: #ffffff;
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control 
+    namespace="CFF" 
+    constructor="ViewBannerControl" 
+    version="0.0.1" 
+    display-name-key="ViewBannerControl" 
+    description-key="ViewBannerControl description" 
+    control-type="virtual" >
+
+    <external-service-usage enabled="false" />
+
+    <data-set name="dataset" display-name-key="Dataset_Display_Key">
+      <property-set name="label_field" display-name-key="Label Logical Field Name" description-key="" of-type="SingleLine.Text" usage="bound" required="true" />
+      <property-set name="foreground_field" display-name-key="Foreground Logical Field Name" description-key="" of-type="SingleLine.Text" usage="bound" required="false" />
+      <property-set name="background_field" display-name-key="Background Logical Field Name" description-key="" of-type="SingleLine.Text" usage="bound" required="false" />
+      <property-set name="icon_field" display-name-key="Icon Logical Field Name" description-key="" of-type="SingleLine.Text" usage="bound" required="false" />
+    </data-set>
+    <resources>
+      <code path="index.ts" order="1"/>
+      <platform-library name="React" version="16.8.6" />
+      <platform-library name="Fluent" version="8.29.0" />
+      <css path="css/ViewBannerControl.css" order="1" />
+      <!-- UNCOMMENT TO ADD MORE RESOURCES
+      
+      <resx path="strings/ViewBannerControl.1033.resx" version="1.0.0" />
+      -->
+    </resources>
+
+    <feature-usage>
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+  </control>
+</manifest>
